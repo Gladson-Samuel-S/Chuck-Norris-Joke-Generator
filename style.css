@@ -1,0 +1,36 @@
+body {
+  --background-color: #dddddd;
+  --text-color: black;
+  --button-text-color: black;
+
+  background: var(--background-color);
+  color: var(--text-color);
+  transition: 0.2s;
+  padding-top: 20px;
+}
+
+button {
+  color: var(--button-text-color);
+}
+
+body.dark {
+  --background-color: #0d335d;
+  --text-color: white;
+  --button-text-color: white;
+
+  background: var(--background-color);
+  color: var(--text-color);
+  transition: 0.2s;
+}
+
+button {
+  color: var(--button-text-color);
+}
+
+button:hover {
+  color: white !important;
+}
+
+button:focus {
+  color: white;
+}
